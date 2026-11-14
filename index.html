@@ -542,6 +542,14 @@ html[data-theme="dark"] .shade{background:linear-gradient(90deg,rgba(1,4,13,.9) 
 
 /* menu centred between logo and phone */
 @media(min-width:1021px){.nav .sp{display:none}.nav .menu{margin-left:auto!important;margin-right:auto}}
+
+footer li.fi a{display:inline-flex;align-items:center;gap:12px}
+.fic{width:32px;height:32px;flex:none;border-radius:50%;display:grid;place-items:center;font-style:normal;color:#fff;transition:transform .25s}
+.fic svg{width:16px;height:16px}
+.fic .fbf{font-size:18px;margin-top:2px}
+.fic.ph{background:var(--orange)}.fic.fb{background:#1f6fe0}.fic.pin{background:rgba(255,255,255,.12);color:var(--orange)}
+footer li.fi a:hover .fic{transform:scale(1.1)}
+footer li.fi{margin-bottom:12px}
 </style>
 </head>
 <body>
@@ -768,9 +776,9 @@ html[data-theme="dark"] .shade{background:linear-gradient(90deg,rgba(1,4,13,.9) 
       <li><a href="#projects" data-ka="პროექტები" data-ru="Проекты" data-en="Projects"></a></li>
       <li><a href="#process" data-ka="პროცესი" data-ru="Процесс" data-en="Process"></a></li></ul></div>
     <div><h4 data-ka="კონტაქტი" data-ru="Контакты" data-en="Contact"></h4><ul>
-      <li><a href="tel:+995577975730">+995 577 975 730</a></li>
-      <li><a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=61596113247986">Facebook</a></li>
-      <li data-ka="ბათუმი, საქართველო" data-ru="Батуми, Грузия" data-en="Batumi, Georgia"></li></ul></div>
+      <li class="fi"><a href="tel:+995577975730"><i class="fic ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg></i>+995 577 975 730</a></li>
+      <li class="fi"><a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=61596113247986"><i class="fic fb"><b class="fbf">f</b></i>Facebook</a></li>
+      <li class="fi"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Batumi%2C+Georgia"><i class="fic pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></i><span data-ka="ბათუმი, საქართველო" data-ru="Батуми, Грузия" data-en="Batumi, Georgia"></span></a></li></ul></div>
   </div>
   <div class="bt"><span>© <span id="yr"></span> D.J Electrics</span><span data-ka="ყველა უფლება დაცულია" data-ru="Все права защищены" data-en="All rights reserved"></span></div>
 </div></footer>
