@@ -526,6 +526,8 @@ html[data-theme="dark"] .ck li::before{background-color:var(--orange)}
 html[data-theme="dark"] .feat i{border-color:#e8eef9}
 html[data-theme="dark"] .mq div{-webkit-text-stroke-color:rgba(232,238,249,.55)}
 html[data-theme="dark"] .exp{color:#fff}
+.vids{grid-template-columns:repeat(3,minmax(0,1fr))!important;max-width:900px;margin-left:auto;margin-right:auto}
+@media(max-width:640px){.vids{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px}}
 </style>
 </head>
 <body>
@@ -900,9 +902,9 @@ rail.onmouseenter=function(){hov=true};rail.onmouseleave=function(){hov=false};
 if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(function(){if(!hov&&rail.scrollWidth>rail.clientWidth+10)step(1)},4500);
 
 // videos: cards that open the reel on Facebook
-var reels=[['1656618946258326','assets/f9.jpg'],['1123300283886205','assets/f17.jpg'],['1003660638678117','assets/f25.jpg'],['1303918748526850','assets/f39.jpg']];
+var reels=[['https://www.facebook.com/share/r/1H1T9C28bA/','assets/f17.jpg'],['https://www.facebook.com/share/r/1K5FwgBUm8/','assets/f25.jpg'],['https://www.facebook.com/share/r/1LDUiXwPCC/','assets/f39.jpg']];
 document.getElementById('vids').innerHTML=reels.map(function(r,i){
-  return '<a class="vid rv d'+i+'" target="_blank" rel="noopener" href="https://www.facebook.com/reel/'+r[0]+'/"><img loading="lazy" alt="" src="'+r[1]+'"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span class="fb">Facebook Reel</span></a>';
+  return '<a class="vid rv d'+i+'" target="_blank" rel="noopener" href="'+r[0]+'"><img loading="lazy" alt="" src="'+r[1]+'"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span class="fb">Facebook Reel</span></a>';
 }).join('');
 
 // reveal + counters
